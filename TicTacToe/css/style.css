@@ -1,0 +1,123 @@
+.body{
+    background-color: #0f0f3e;
+    font-family: sans-serif;
+}
+.container{
+    max-width: 1000px;
+    height: 700px;
+    margin: 200px auto;
+    background-color: #45455e;
+}
+.little-container{
+    margin: 0 auto;
+    max-width: 300px;   
+}
+.name{
+    padding-top: 100px ;
+    text-align: center;
+    color: #fff;
+    font-size: 26px;
+    font-weight: bold;
+    
+}
+.name::after{
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 20%;
+    border-bottom: 2px solid #fff;
+    margin-top: 10px;   
+}
+.board{
+    margin-top: 50px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
+    grid-gap: 4px;
+    background-color: #00FFFF;
+}
+.grid{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-color: #45455e;
+}
+
+.x::after{
+    content: 'X';
+    font-size: 90px;
+    padding: 5px;
+    color: #fff;
+    font-weight: bold;
+}
+.o::after{
+    content: 'O';
+    font-size: 90px;
+    padding: 5px;
+    color: #fff;
+    font-weight: bold;
+}
+.won::after{
+    color: #c71740;
+}
+
+.btns{
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+.btn{
+    padding: 15px 0px;
+}
+.btn span{
+    font-size: 16px;
+    padding: 15px 45px;
+    color: #000;
+    font-weight: bold;
+    background-color: #f1ce32;
+    
+}
+
+
+@media only screen and (max-width: 600px){
+    .container{
+        max-width: 350px;
+        max-height: 400px;
+        margin: 30px auto;
+    }
+    .name{
+        font-size: 20px;
+        padding-top: 20px;
+    }
+    .board{
+        margin: 30px 0;
+    }
+    .little-container{
+        max-width: 210px;
+    }
+    .grid{
+        width: 70px;
+        height: 70px;
+    }
+    .x::after{
+        font-size: 60px;
+    }
+    .o::after{
+        font-size: 60px;
+    }
+    .btns{
+        margin: 30px;
+    }
+    .btn{
+        padding: 10px 0px;
+    }
+    .btn span{
+        font-size: 12px;
+        padding: 10px 35px;
+    }
+}
