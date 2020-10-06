@@ -1,0 +1,92 @@
+.pricing-section{
+    .col-lg-3{
+        padding: 0;
+        margin: 0;
+    }
+    .pricing-card{
+        background-color: #f8fcfe;
+        width: 100%;
+        text-align: center;
+        border: 1px solid #e1e1e1;
+        position: relative;
+        z-index: 120;
+        overflow: hidden;
+        transition-duration: 0.4s;
+        margin-bottom: 30px;
+        .hover-offer{
+            display: none;
+            text-align: start;
+            right: -45px;
+            position: absolute;
+            z-index: 130;
+            padding: 10px 10px 10px 55px;
+            background-color: $green;
+            color: $white;
+            text-transform: uppercase;
+            transition-duration: 0.6s;
+            transform: rotate(40deg);
+            width: 150px;
+        }
+        .pricing-title{
+            padding: 20px;
+            color: #717171;
+            font-family: 'MontserratBold';
+            font-size: 24px;
+        }
+        &:hover{
+            z-index: 121;
+            box-shadow:  0 0 10px #717171;
+            .hover-offer{
+                display: inline-block;
+            }
+            .price-area{
+                background-color: $green;
+            }
+            .pricing-btn{
+                background-color: $green;
+                border-color: $green;
+            }
+        }
+        .price-area{
+            width: 100%;
+            transition-duration: 0.6s;
+            background-color: $blue;
+            padding: 20px 0px;
+            .price{
+                color: $white;
+                font-size: 40px;
+                font-family: 'MontserratBold';
+                .price-date{
+                    font-family: 'MontserratLight';
+                    font-size: $font-size-14px;
+                }
+            }
+        }
+        .pricing-btn{
+            text-transform: uppercase;
+            color: $white;
+            background-color: $blue;
+            transition-duration: 0.6s;
+            cursor: pointer;
+            border: 2px solid $blue;
+            border-radius: 7px;
+            padding: 20px 50px;
+            &:hover{
+                border-color: $green;
+                background-color: $white;
+                color: $green;
+            }
+        }
+        .pricing-ul{
+            margin-top: 5px;
+            .pricing-li{
+                width: 100%;
+                padding: 20px 15px 15px 15px;
+                border-top: 1px solid #e1e1e1;
+                font-family: 'MontserratRegular';
+                font-size: $font-size-14px;
+                color: #777;
+            }
+        }
+    }
+}

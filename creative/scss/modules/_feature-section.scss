@@ -1,0 +1,22 @@
+.feature-card{
+    padding: 0px 30px 70px 0px;
+    .little-title{
+        font-family: 'MontserratBold';
+        font-size: 18px;
+        color: #717171;
+        transition-duration: 0.6s;
+        cursor: pointer;
+        .feature-icon{
+            padding-right: 20px;
+        }
+        &:hover{
+            color: $green;
+        }
+    }
+    .feature-p{
+        padding-top: 20px;
+        font-family: 'MontserratLight';
+        font-size: $font-size-14px;
+        color: $padding-grey;
+    }
+}

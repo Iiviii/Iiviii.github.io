@@ -1,0 +1,33 @@
+.fact-section{
+    margin-top: 70px;
+    .col-lg-3{
+        margin: 0;
+        padding: 0;
+        .fact-area{
+            padding: 70px 0px 50px 0px;
+            width: 100%;
+            border-top: 10px solid $green;
+            background-color: $blue;
+            text-align: center;
+            .fact-num{
+                font-family: 'MontserratRegular';
+                font-size: $font-size-36px;
+                color: $white;
+                padding: 20px 0px;
+            }
+            .fact-title{
+                color: $green;
+                font-size: 18px;
+                font-family: 'MontserratLight';
+            }
+        }
+        .fact-area-second{
+            @extend .fact-area;
+            background-color: $green;
+            border-color: $blue;
+            .fact-title{
+                color: $blue;
+            }
+        }
+    }
+}

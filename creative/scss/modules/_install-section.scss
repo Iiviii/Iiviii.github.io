@@ -1,0 +1,57 @@
+.install-section{
+    @extend .fluid-container;
+   
+    text-align: center;
+    background-color: #40474b;
+    @include media-min(1200) {
+        margin-top: 200px;
+    }
+    @include media-int(768, 1199) {
+        margin-top: 180px;
+    }
+    @include media-max(767) {
+        margin-top: 170px;
+    }
+    .install-area{
+        margin: 0 auto;
+        @include media-min(1200) {
+            padding: 130px 0px;
+        }
+        @include media-int(992, 1199) {
+            padding: 50px 0px;
+        }
+        @include media-int(768, 991) {
+            padding: 30px 0px;
+        }
+        @include media-max(767) {
+            padding: 50px 0px;
+        }
+        .install-title{
+            color: $green;
+            font-family: 'MontserratBold';
+            @include media-min(1200) {
+                font-size: 40px;
+            }
+            @include media-int(768, 1199) {
+                font-size: 30px;
+            }
+            @include media-max(767) {
+                font-size: 30px;
+            }
+        }
+        .install-p{
+            color: #d8d8d8;
+            font-size: 16px;
+            font-family: 'MontserratRegular';
+            @include media-min(1200) {
+                padding: 40px 0px 70px 0px;
+            }
+            @include media-int(768, 1199) {
+                padding: 40px 0px 50px 0px;
+            }
+            @include media-max(767) {
+                padding: 40px 0px 50px 0px;
+            }
+        }
+    }
+}

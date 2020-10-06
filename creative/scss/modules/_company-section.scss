@@ -1,0 +1,90 @@
+.company-section{
+    @extend .fluid-container;
+    @extend .bg-cover;
+    background-color: $dark-blue;
+    background-image: url("../images/BG.png");
+    .compani-title{
+        .h2{
+            text-align: start;
+            color: $white;
+        }
+        .lines{
+            @include media-min(1200) {
+                margin-left: 140px;
+            }
+            @include media-int(992, 1199) {
+                margin-left: 140px;
+            }
+            @include media-int(768, 991) {
+                margin-left: 100px;
+            }
+            @include media-max(767) {
+                margin-left: 85px;
+            }
+        }
+    }
+    .our{
+        font-family: 'MontserratBold';
+        font-size: 16px;
+        color: $white;
+        text-transform: uppercase;
+        margin-bottom: 50px;
+        .our-title{
+            margin: 0px 15px;
+            padding-top: 10px;
+            border-top: 1px solid #090f14;
+            transition-duration: 0.6s;
+            &:first-child{
+                margin-left: 0px;
+            }
+            &:hover{
+                border-top: 1px solid $green;
+                color: $green;
+            }
+        }
+    }
+    .each-area{
+        border: 1px solid #959595;
+        height: 40px;
+        position: relative;
+        z-index: 10;
+        border-radius: 3px;
+        margin: 7.5px 0px;
+        &:last-child{
+            margin-bottom: 100px;
+        }
+        .each{
+            position: absolute;
+            z-index: 20;
+            left: -1px;
+            top: -1px;
+            border: none;
+            width: 70%;
+            padding-left: 15px;
+            height: 40px;
+            line-height: 40px;
+            background-color: #9c5da5;
+            border-radius: 3px;
+            font-family: 'MontserratRegular';
+            font-size: $font-size-13px;
+            color: $white;
+            text-transform: uppercase;
+        }
+        .two{
+            width: 80%;
+            background-color: $light-blue;
+        }
+        .three{
+            width: 65%;
+            background-color: #d67f7f;
+        }
+        .four{
+            width: 90%;
+            background-color: #20bc9d;
+        }
+        .five{
+            width: 85%;
+            background-color: #bb8a36;
+        }
+    }
+}

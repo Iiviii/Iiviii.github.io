@@ -1,0 +1,163 @@
+.header{
+    @extend .fluid-container;
+    background-color: #44433e;
+    @include media-min(1200) {
+        height: 120px;
+    }
+    @include media-int(992, 1199) {
+        height: 100px;
+    }
+    @include media-int(768, 991) {
+        height: 70px;
+    }
+    @include media-max(767) {
+        height: 50px;
+    }
+    .logo{
+        @extend .bg-cover;
+        @include media-min(1200) {
+            height: 70px;
+            margin: 25px 15px;
+        }
+        @include media-int(992, 1199) {
+            height: 50px;
+            margin: 15px;
+        }
+        @include media-int(768, 991) {
+            height: 40px;
+            margin: 15px;
+        }
+        @include media-max(767) {
+            height: 30px;
+            margin: 5px;
+        }
+    }
+    .nav{
+        @include media-min(1200) {
+            display: inline-block;
+        }
+        @include media-int(992, 1199) {
+            display: inline-block;
+        }
+        @include media-int(768, 991) {
+            display: none;
+        }
+        @include media-max(767) {
+            display: none;
+        }
+        .nav-ul{
+            @extend .flex-middle;
+            @include media-min(1200) {
+                height: 120px;
+            }
+            @include media-int(992, 1199) {
+                height: 100px;
+            }
+            @include media-int(768, 991) {
+                height: 70px;
+            }
+            @include media-max(767) {
+                height: 50px;
+            }
+        }
+        
+    }
+    .burger{
+        cursor: pointer;
+        @include media-min(1200) {
+            display: none;
+        }
+        @include media-int(992, 1199) {
+            display: none;
+        }
+        @include media-int(768, 991) {
+            display: inline-block;
+            height: 30px;
+            margin: 25px 0px;
+        }
+        @include media-max(767) {
+            height: 20px;
+            margin: 15px 0px;
+        }
+    }
+    .nav-a{
+        margin: 0px 11px;
+        font-size: $font-size-13px;
+        color: $grey;
+        font-family: 'MontserratBold';
+        transition-duration: 0.6s;
+        border-bottom: 2px solid $bg-grey;
+        &:hover{
+            color: $green;
+            border-bottom: 2px solid $green;
+        }
+        @include media-min(1200) {
+            padding: 15px 0px 51px 0px;
+        }
+        @include media-int(992, 1199) {
+            padding-bottom: 42px;
+        }
+    }
+    .search{
+        .search-icon{
+            margin: 0px 11px;
+            height: 18px;
+            cursor: pointer;
+        }
+    }
+}
+.logo-title{
+    font-size: 32px;
+    color: $white;
+    font-family: 'MontserratRegular';
+    @include media-min(1200) {
+        font-size: 32px;
+    }
+    @include media-int(992, 1199) {
+        font-size: 28px;
+    }
+    @include media-int(768, 991) {
+        font-size: 25px;
+    }
+    @include media-max(767) {
+        font-size: 15px;
+    }
+    .logo-title-green{
+        color: $green;
+        font-family: 'MontserratBold';
+    }
+}
+.search-area{
+    display: none;
+    position: absolute;
+    z-index: 60;
+    right: 20px;
+    top: -250px;
+    background-color: $white;
+    .search-container{
+        .search-input{
+            border: none;
+            width: 600px;
+            padding: 20px;
+        }
+        .search-input[type=text],
+        .search-input::placeholder{
+            font-family: 'MontserratRegular';
+            font-size: 16px;
+            color: $grey;
+        }
+        .search-btn{
+            background-color: $green;
+            color: $white;
+            font-size: 16px;
+            border: 1px solid $green;
+            margin: 7px;
+            padding: 13px 15px;
+            transition-duration: 0.6s;
+            &:hover{
+                color: $green;
+                background-color: $white;
+            }
+        }
+    }
+}

@@ -1,0 +1,60 @@
+.h2{
+    font-family: 'MontserratRegular';
+    color: #4e4e4e;
+    text-align: center;
+    @include media-min(1200) {
+        padding-top: 100px;
+        font-size: $font-size-36px;
+    }
+    @include media-int(992, 1199) {
+        padding-top: 70px;
+        font-size: 33px;
+    }
+    @include media-int(768, 991) {
+        padding-top: 40px;
+        font-size: 30px;
+    }
+    @include media-max(767) {
+        padding-top: 25px;
+        font-size: 25px;
+    }
+}
+.lines{
+    position: relative;
+    width: 75px;
+    margin: 0 auto;
+    @include media-min(1200) {
+        padding: 15px 0px 75px 0px;
+        &::after{
+            bottom: 52px;
+        }
+    }
+    @include media-int(992, 1199) {
+        padding: 15px 0px 75px 0px;
+        &::after{
+            bottom: 52px;
+        }
+    }
+    @include media-int(768, 991) {
+        padding: 15px 0px 55px 0px;
+        &::after{
+            bottom: 40px;
+        }
+    }
+    @include media-max(767) {
+        padding: 15px 0px 40px 0px;
+        &::after{
+            bottom: 25px;
+        }
+    }
+    &::before{
+        position: absolute;
+        right: 5px;
+        content: url("../images/line1.png");
+    }
+    &::after{
+        position: absolute;
+        left: 5px;
+        content: url("../images/line2.png");
+    }
+}

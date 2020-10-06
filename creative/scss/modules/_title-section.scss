@@ -1,0 +1,100 @@
+.title-section{
+    @extend .fluid-container;
+    background-color: $bg-grey;
+    font-family: 'MontserratBold';
+    text-align: center;
+    @include media-min(1200) {
+        padding: 250px 0px;
+    }
+    @include media-int(992, 1199) {
+        padding: 100px 0px;
+    }
+    @include media-int(768, 991) {
+        padding: 50px 0px;
+    }
+    @include media-max(767) {
+        padding: 40px 0px;
+    }
+    .container{
+        position: relative;
+        z-index: 50;
+    }
+    .title-h2{
+        font-family: 'MontserratBold';
+        color: $white;
+        
+        @include media-min(1200) {
+            font-size: $font-size-35px;
+        }
+        @include media-int(992, 1199) {
+            font-size: 30px;
+        }
+        @include media-int(768, 991) {
+            font-size: 25px;
+        }
+        @include media-max(767) {
+            font-size: 20px;
+        }
+        .span{
+            color: $green;
+        }
+    }
+    .title-h1{
+        color: $white;
+        font-family: 'MontserratBold';
+        @include media-min(1200) {
+            font-size: 79px;
+            padding: 45px;
+        }
+        @include media-int(992, 1199) {
+            font-size: 60px;
+            padding: 30px;
+        }
+        @include media-int(768, 991) {
+            font-size: 55px;
+            padding: 20px;
+        }
+        @include media-max(767) {
+            font-size: 40px;
+            padding: 20px;
+        }
+    }
+    .title-p{
+        color: $light-grey;
+        font-family: 'MontserratLight';
+        @include media-min(1200) {
+            font-size: $font-size-35px;
+            padding-bottom: 140px;
+        }
+        @include media-int(992, 1199) {
+            font-size: 25px;
+            padding-bottom: 90px;
+        }
+        @include media-int(768, 991) {
+            font-size: 20px;
+            padding-bottom: 50px;
+        }
+        @include media-max(767) {
+            font-size: 18px;
+            padding-bottom: 30px;
+        }
+    }
+    .title-btns{
+        @extend .align-center;
+        @extend .flex-middle;
+        .btn-holder{
+            .btn-blue{
+                background-color: $light-blue;
+                border-color: $light-blue;
+            }
+            &:hover{
+                background-color: $light-blue;
+                .btn-blue{
+                    background-color: $white;
+                    border-color: $white;
+                    color: $light-blue;
+                }
+            }
+        }
+    }
+}

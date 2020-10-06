@@ -1,0 +1,84 @@
+.team-section{
+    @include media-min(1200) {
+        margin-bottom: 100px;
+    }
+    @include media-int(992, 1199) {
+        margin-bottom: 70px;
+    }
+    @include media-int(768, 991) {
+        margin-bottom: 40px;
+    }
+    @include media-max(767) {
+        margin-bottom: 25px;
+    }
+    .team-card{
+        width: 100%;
+        transition-duration: 0.6s;
+        margin-bottom: 30px;
+        .team-card-img{
+            @extend .bg-cover;
+            height: 230px;
+            background-image: url("../images/gallery3.jpg");
+            position: relative;
+            z-index: 140;
+            .team-hover{
+                display: none;
+                position: absolute;
+                z-index: 150px;
+                .hover-icon{
+                    margin: 75px 90px;
+                    cursor: pointer;
+                }
+            }
+        }
+        .team-title-area{
+            background-color: #2e4a5b;
+            padding: 20px 20px 20px 15px;
+            transition-duration: 0.6s;
+            .team-title{
+                color: $white;
+                font-size: 16px;
+                font-family: 'MontserratBold';
+            }
+            .team-task{
+                padding-top: 10px;
+                font-family: 'MontserratLight';
+                color: $green;
+                font-size: $font-size-13px;
+                transition-duration: 0.6s;
+            }
+        }
+        .social{
+            background-color: #2e4a5b;
+            display: flex;
+            transition-duration: 0.6s;
+            border-top: 2px solid #c7cfd3;
+            .icon-holder{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 65px;
+                padding: 20px 0px 15px 0px;
+                border-right: 2px solid #c7cfd3;
+                &:last-child{
+                    border-right: none;
+                }
+                .icon{
+                    height: 20px;
+                }
+            }
+        }
+        &:hover{
+            .team-title-area,
+            .social{
+                background-color: $green;
+            }
+            .team-task{
+                color: #2e4a5b;
+            }
+            .team-hover{
+                display: block;
+            }
+        }
+    }
+}
