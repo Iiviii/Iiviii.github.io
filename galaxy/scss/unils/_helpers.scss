@@ -1,0 +1,209 @@
+.bg-cover {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.pos-abs {
+    position: absolute;
+}
+.margin{
+    margin: 0!important;
+}
+.padding{
+    padding: 0!important;
+}
+.relative {
+    position: relative !important;
+}
+.overflow{
+    &-hidden{
+        overflow: hidden;
+    }
+    &-visible{
+        overflow: visible;
+    }
+}
+.full{
+    width: 100%;
+}
+.no-gutter-lg {
+    @include media-min(1200) {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+.no-gutter-md {
+    @include media-int(992, 1199) {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+.no-gutter-sm {
+    @include media-int(768, 991) {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+.no-gutter-xs {
+    @include media-max(767) {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+.center-block {
+    margin: 0 auto;
+    float: none;
+}
+.flex{
+    display: flex;
+    &-row{
+        flex-direction: row;
+    }
+    &-row-reverse{
+        flex-direction: row-reverse;
+    }
+    &-column{
+        flex-direction: column;
+    }
+    &-column-reverse{
+        flex-direction: column-reverse;
+    }
+    &-wrap{
+        flex-wrap: wrap;
+    }
+    &-no-wrap{
+        flex-wrap: nowrap;
+    }
+}
+.flex-middle{
+    display: flex;
+    align-items: center;
+}
+.flex-justify-middle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-center{
+    display: flex;
+    justify-content: center;
+}
+
+.align{
+    &-left{
+        justify-content: flex-start;
+    }
+    &-right{
+        justify-content: flex-end;
+    }
+    &-center{
+        justify-content: center;
+    }
+    &-justify{
+        justify-content: space-between;
+    }
+    &-spaced{
+        justify-content: space-around;
+    }
+    &-top{
+        align-items: flex-start;
+    }
+    &-bottom{
+        align-items: flex-end;
+    }
+    &-middle{
+        align-items: center;
+    }
+    &-stretch{
+        align-items: stretch;
+    }
+    &-baseline{
+        align-items: baseline;
+    }
+    &-self-top{
+        align-self: flex-start;
+    }
+    &-self-bottom{
+        align-self: flex-end;
+    }
+    &-self-middle{
+        align-self: center;
+    }
+    &-self-stretch{
+        align-self: stretch;
+    }
+    &-center-middle{
+        justify-content: center;
+        align-items: center;
+    }
+}
+.text{
+    &-left{
+        text-align: left;
+    }
+    &-right{
+        text-align: right;
+    }
+    &-center{
+        text-align: center;
+    }
+    &-justify{
+        text-align: justify;
+    }
+    &-uppercase{
+        text-transform: uppercase;
+    }
+    &-capital{
+        text-transform: capitalize;
+    }
+    &-underline{
+        text-decoration: underline;
+    }
+    &-cursive{
+        font-style: italic;
+    }
+    &-nowrap{
+        white-space: nowrap;
+    }
+    &-ellipsis{
+        max-width: 100%;
+        display: block;
+        overflow: hidden;
+        white-space: nowrap;
+        text-align: left;
+        text-overflow: ellipsis;
+    }
+    &-white{
+        color: #fff;
+    }
+}
+.hidden-xs {
+    @include media-max(767) {
+        display: none !important;
+    }
+}
+.hidden-sm {
+    @include media-int(768, 991) {
+        display: none !important;
+    }
+}
+.hidden-md {
+    @include media-int(992, 1299) {
+        display: none !important;
+    }
+}
+.hidden-lg {
+    @include media-min(1300) {
+        display: none !important;
+    }
+}
+.hidden-hd {
+    @include media-int(1300, 1599) {
+        display: none !important;
+    }
+}
+.hidden-fhd {
+    @include media-min(1600) {
+        display: none !important;
+    }
+}

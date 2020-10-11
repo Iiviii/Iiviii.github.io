@@ -1,0 +1,19 @@
+// $theme-colors: (
+//     "primary": #717171,
+// );
+@import "./unils/variables";
+@import "./unils/mixins";
+@import "./unils/grid";
+@import "./base/reset";
+@import "./unils/fonts";
+@import "./base/base";
+@import "./unils/helpers";
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "./components/buttons";
+@import "./partials/forms";
+@import "./partials/sidebar";
+@import "./layout/navigation";
+@import "./layout/header";
+@import "./layout/footer";
+@import "./pages/main";
+

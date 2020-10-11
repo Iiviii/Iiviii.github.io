@@ -1,0 +1,314 @@
+.feature-section{
+    @extend .global-wrapper;
+    background-color: #2e3b4e;
+    @include media-min(1200) {
+        padding-bottom: 140px;
+    }
+    @include media-int(992, 1199) {
+        padding-bottom: 140px;
+    }
+    @include media-int(768, 991) {
+        padding-bottom: 100px;
+    }
+    @include media-int(576, 767) {
+        padding-bottom: 80px;
+    }
+    @include media-max(576) {
+        padding-bottom: 70px;
+    }
+    .feature-card{
+        color: $white;
+        font-size: 15px;
+        width: 395px;
+        @include media-min(1200) {
+            margin: 75px auto 0px auto;
+        }
+        @include media-int(992, 1199) {
+            margin: 75px auto 0px auto;
+        }
+        @include media-int(768, 991) {
+            margin: 55px auto 0px auto;
+        }
+        @include media-int(576, 767) {
+            margin: 45px auto 0px auto;
+        }
+        @include media-max(576) {
+            margin: 35px auto 0px auto;
+        }
+        .feature-title{
+            padding-bottom: 30px;
+            font-family: 'OpenSansBold';
+            font-size: 20px;
+        }
+        .feature-p{
+            font-family: 'timesnewroman';
+        }
+    }
+}
+.pink-section{
+    @extend .global-wrapper;
+    @extend .bg-cover;
+    background-image: url("../images/pink-bg.png");
+    display: flex;
+    align-items: center;
+    @include media-min(1200) {
+        height: 540px;
+    }
+    @include media-int(992, 1199) {
+        height: 540px;
+    }
+    @include media-int(768, 991) {
+        height: 440px;
+    }
+    @include media-int(576, 767) {
+        height: 340px;
+    }
+    @include media-max(576) {
+        height: 340px;
+    }
+    .pink-area{
+        text-align: center;
+        color: $white;
+        .pink-description-holder{
+            max-width: 440px;
+            margin: 0 auto;
+            padding: 30px 0px;
+            .pink-p{
+                font-size: 15px;
+                font-family: 'timesnewroman';
+            }
+        }
+    }
+}
+.pink-title{
+    font-size: 35px;
+    font-family: 'OpenSansLight';
+    @include media-min(1200) {
+        font-size: 35px;
+    }
+    @include media-int(992, 1199) {
+        font-size: 35px;
+    }
+    @include media-int(576, 991) {
+        font-size: 30px;
+    }
+    @include media-max(576) {
+        font-size: 30px;
+    }
+}
+.about-section{
+    .col-md-8{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .about-img{
+        width: 100%;
+        @include media-min(1200) {
+            height: 500px;
+        }
+        @include media-int(992, 1199) {
+            height: 500px;
+        }
+        @include media-int(768, 991) {
+            height: 400px;
+        }
+        @include media-int(576, 767) {
+            height: 300px;
+        }
+        @include media-max(576) {
+            height: 300px;
+        }
+    }
+}
+.about-us-area{
+    color: #3a4d60;
+    @include media-min(1200) {
+        padding: 90px 50px 0px 50px;
+    }
+    @include media-int(992, 1199) {
+        padding: 90px 50px 0px 50px;
+    }
+    @include media-int(576, 991) {
+        padding: 30px 50px;
+    }
+    @include media-max(576) {
+        padding: 20px 50px;
+    }
+    .about-title{
+        font-size: 20px;
+        font-family: 'OpenSansBold';
+    }
+    .about-p{
+        font-family: 'timesnewroman';
+        font-size: 18px;
+    }
+}
+.base-section{
+    @extend .bg-cover;
+    @extend .flex-middle;
+    @extend .global-wrapper;
+    text-align: center;
+    background-image: url("../images/base-bg.png");
+    height: 550px;
+    color: $white;
+    @include media-min(1200) {
+        height: 550px;
+    }
+    @include media-int(992, 1199) {
+        height: 550px;
+    }
+    @include media-int(768, 991) {
+        height: 450px;
+    }
+    @include media-int(576, 767) {
+        height: auto;
+    }
+    @include media-max(576) {
+        height: auto;
+    }
+    .description-holder{
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 30px;
+        font-family: 'timesnewroman';
+        font-size: 20px;
+        color: #a87bb7;
+    }
+    .base-btn-area{
+        .base-p{
+            font-size: 12px;
+            font-family: 'timesnewroman';
+            padding-top: 20px;
+        }
+    }
+}
+.post-section{
+    @extend .global-wrapper;
+    @extend .bg-cover;
+    @extend .flex-middle;
+    background-image: url("../images/post-bg.png");
+    color: $white;
+    @include media-min(1200) {
+        height: 670px;
+    }
+    @include media-int(992, 1199) {
+        height: 670px;
+    }
+    @include media-int(768, 991) {
+        height: 570px;
+    }
+    @include media-int(576, 767) {
+        height: 470px;
+    }
+    @include media-max(576) {
+        height: 470px;
+    }
+    .post-title{
+        font-family: 'timesnewroman';
+        
+        padding: 25px 0px;
+        @include media-min(1200) {
+            font-size: 40px;
+        }
+        @include media-int(992, 1199) {
+            font-size: 40px;
+        }
+        @include media-int(768, 991) {
+            font-size: 35px;
+        }
+        @include media-int(576, 767) {
+            font-size: 30px;
+        }
+        @include media-max(576) {
+            font-size: 25px;
+        }
+    }
+    .author-area{
+        @extend .flex-middle;
+        .author-name{
+            padding: 20px 0px 0px 10px;
+        }
+    }
+}
+.about-section-two{
+    .col-md-8{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .about-img{
+        @extend .bg-cover;
+        width: 100%;
+        background-image: url("../images/about2.png");
+        @include media-min(1200) {
+            height: 500px;
+        }
+        @include media-int(992, 1199) {
+            height: 500px;
+        }
+        @include media-int(768, 991) {
+            height: 400px;
+        }
+        @include media-int(576, 767) {
+            height: 300px;
+        }
+        @include media-max(576) {
+            height: 300px;
+        }
+    }
+}
+.touch-section{
+    @extend .global-wrapper;
+    background-color: #e7526b;
+    height: 460px;
+    padding: 90px 0px;
+    color: $white;
+    @include media-min(1200) {
+        height: 460px;
+        padding: 90px 0px;
+    }
+    @include media-int(992, 1199) {
+        height: 460px;
+        padding: 90px 0px;
+    }
+    @include media-int(768, 991) {
+        height: 360px;
+        padding: 50px 0px;
+    }
+    @include media-int(576, 767) {
+        height: 260px;
+        padding: 30px 0px;
+    }
+    @include media-max(576) {
+        height: 260px;
+        padding: 20px 0px;
+    }
+    .touch-title{
+        font-family: 'OpenSansBold';
+        font-size: 20px;
+    }
+    .touch-p{
+        font-family: 'timesnewroman';
+        font-size: 15px;right: 30px;
+        @include media-min(1200) {
+            padding: 25px 0px 40px 0px;
+        }
+        @include media-int(992, 1199) {
+            padding: 25px 0px 40px 0px;
+        }
+        @include media-int(768, 991) {
+            padding: 25px 0px;
+        }
+        @include media-int(576, 767) {
+            padding: 20px 0px;
+        }
+        @include media-max(576) {
+            padding: 20px 0px;
+        }
+    }
+    .touch-a{
+        font-family: 'timesnewroman';
+        font-size: 15px;
+        text-decoration: underline;
+        color: $white;
+    }
+}

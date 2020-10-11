@@ -1,0 +1,126 @@
+.header{
+    @extend .global-wrapper;
+    @extend .bg-cover;
+    background-image: url("../images/title-bg.png");
+    font-family: 'timesnewroman';
+    @include media-min(1200) {
+        height: 890px;
+    }
+    @include media-int(992, 1199) {
+        height: 890px;
+    }
+    @include media-int(768, 991) {
+        height: 600px;
+    }
+    @include media-int(576, 767) {
+        height: 500px;
+    }
+    @include media-max(576) {
+        height: 400px;
+    }
+}
+.search-area{
+    display: none;
+    position: absolute;
+    z-index: 8;
+    top: 0;
+    @include media-min(1200) {
+        right: 30px;
+    }
+    @include media-int(992, 1199) {
+        right: 30px;
+    }
+    @include media-int(768, 991) {
+        right: 30px;
+    }
+    @include media-int(576, 767) {
+        right: 20px;
+    }
+    @include media-max(576) {
+        right: 0;
+    }
+    .search-container{
+        width: 325px;
+        height: 35px;
+        border-radius: 50px;
+        background: $white;
+        display: flex;
+        @include media-int(280, 325) {
+            width: 280px;
+        }
+        @include media-max(279) {
+            width: 200px;
+        }
+        .search-input{
+            border-radius: 50px;
+            width: 85%;
+            height: 35px;
+            padding: 5px 15px;
+            border: none;
+            outline: none;
+        }
+        .search-input[type=text],
+        .search-input::placeholder{
+            font-family: 'timesnewroman';
+            font-size: 16px;
+            color: #626262;
+        }
+        .search-btn{
+            border: none;
+            outline: none;
+            width: 15%;
+            border-radius: 50px;
+            background-color: $white;
+            font-size: 20px;
+            color: #626262;
+            transition-duration: 0.4s;
+            &:hover{
+                color: #2e3b4e;
+            }
+        }
+    }
+}
+.main-title-area{
+    color: $white;
+    text-align: end;
+    @include media-min(1200) {
+        padding-top: 270px;
+    }
+    @include media-int(992, 1199) {
+        padding-top: 270px;
+    }
+    @include media-int(768, 991) {
+        padding-top: 100px;
+    }
+    @include media-int(576, 768) {
+        padding-top: 70px;
+    }
+    @include media-max(576) {
+        padding-top: 50px;
+    }
+    .main-title{
+        @include media-min(1200) {
+            font-size: 50px;
+        }
+        @include media-int(992, 1199) {
+            font-size: 50px;
+        }
+        @include media-int(768, 991) {
+            font-size: 40px;
+        }
+        @include media-int(576, 768) {
+            font-size: 30px;
+        }
+        @include media-max(576) {
+            font-size: 30px;
+        }
+    }
+}
+.title-btn-area{
+    padding-top: 55px;
+    .title-p{
+        padding: 20px;
+        font-size: 12px;
+        font-family: 'timesnewroman';
+    }
+}

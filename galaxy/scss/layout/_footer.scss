@@ -1,0 +1,29 @@
+.footer{
+    @extend .global-wrapper;
+    background-color: #2e3b4e;
+    @include media-min(1200) {
+        height: 300px;
+        padding-top: 90px;
+    }
+    @include media-int(992, 1199) {
+        height: 300px;
+        padding-top: 90px;
+    }
+    @include media-int(768, 991) {
+        height: 200px;
+        padding-top: 50px;
+    }
+    @include media-int(576, 767) {
+        height: 200px;
+        padding-top: 30px;
+    }
+    @include media-max(576) {
+        height: 100px;
+        padding-top: 20px;
+    }
+    .footer-description{
+        color: $white;
+        font-size: 13px;
+        font-family: 'timesnewroman';
+    }
+}

@@ -1,0 +1,60 @@
+.btn{
+    font-size: 16px;
+    color: $white;
+    border: 2px solid;
+    border-radius: 50px;
+    transition-duration: 0.4s;
+    font-family: 'OpenSansBold';
+}
+.btn-purple{
+    border-color: #8824cd;
+    background-color: #8824cd;
+    @include media-min(1200) {
+        padding: 20px 60px;
+    }
+    @include media-int(992, 1199) {
+        padding: 20px 60px;
+    }
+    @include media-int(768, 991) {
+        padding: 15px 30px;
+    }
+    @include media-int(576, 767) {
+        padding: 15px 25px;
+    }
+    @include media-max(576) {
+        padding: 10px 20px;
+    }
+    &:hover{
+        background-color: $white;
+        color: #8824cd;
+    }
+}
+
+.btn-pink{
+    border-color: #d54c63;
+    background-color: $white;
+    color: #d54c63;
+    @include media-min(1200) {
+        padding: 20px 90px;
+    }
+    @include media-int(992, 1199) {
+        padding: 20px 90px;
+    }
+    @include media-int(768, 991) {
+        padding: 15px 50px;
+    }
+    @include media-int(576, 767) {
+        padding: 15px 30px;
+    }
+    @include media-max(576) {
+        padding: 10px 20px;
+    }
+    &:hover{
+        color: $white;
+        background-color: #d54c63;
+        
+    }
+}
+.btn-white{
+    padding: 10px 30px;
+}
