@@ -7585,7 +7585,7 @@ a.text-dark:hover, a.text-dark:focus {
     .navigation .burger-holder {
       display: flex;
       align-items: center; } }
-  @media (min-width: 576px) and (max-width: 768px) {
+  @media (min-width: 576px) and (max-width: 767px) {
     .navigation .burger-holder {
       display: flex;
       align-items: center; } }
@@ -7609,7 +7609,7 @@ a.text-dark:hover, a.text-dark:focus {
   @media (min-width: 768px) and (max-width: 991px) {
     .navigation .none {
       display: none; } }
-  @media (min-width: 576px) and (max-width: 768px) {
+  @media (min-width: 576px) and (max-width: 767px) {
     .navigation .none {
       display: none; } }
   @media only screen and (max-width: 576px) {

@@ -27,7 +27,7 @@
             display: flex;
             align-items: center;
         }
-        @include media-int(576, 768) {
+        @include media-int(576, 767) {
             display: flex;
             align-items: center;
         }
@@ -55,7 +55,7 @@
         @include media-int(768, 991) {
             display: none;
         }
-        @include media-int(576, 768) {
+        @include media-int(576, 767) {
             display: none;
         }
         @include media-max(576) {
