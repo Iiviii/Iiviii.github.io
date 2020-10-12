@@ -24,7 +24,8 @@
             display: none;
         }
         @include media-int(768, 991) {
-            display: none;
+            display: flex;
+            align-items: center;
         }
         @include media-int(576, 768) {
             display: flex;
@@ -52,7 +53,7 @@
             display: flex;
         }
         @include media-int(768, 991) {
-            display: flex;
+            display: none;
         }
         @include media-int(576, 768) {
             display: none;
