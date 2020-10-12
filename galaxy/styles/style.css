@@ -7575,6 +7575,54 @@ a.text-dark:hover, a.text-dark:focus {
   @media only screen and (max-width: 576px) {
     .navigation {
       height: 50px; } }
+  @media only screen and (min-width: 1200px) {
+    .navigation .burger-holder {
+      display: none; } }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .navigation .burger-holder {
+      display: none; } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .navigation .burger-holder {
+      display: none; } }
+  @media (min-width: 576px) and (max-width: 768px) {
+    .navigation .burger-holder {
+      display: flex;
+      align-items: center; } }
+  @media only screen and (max-width: 576px) {
+    .navigation .burger-holder {
+      display: flex;
+      align-items: center; } }
+  .navigation .burger-holder .search {
+    color: #fff;
+    font-size: 20px;
+    transition-duration: 0.4s;
+    margin-left: 20px; }
+    .navigation .burger-holder .search:hover {
+      opacity: 0.7; }
+  @media only screen and (min-width: 1200px) {
+    .navigation .none {
+      display: flex; } }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .navigation .none {
+      display: flex; } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .navigation .none {
+      display: flex; } }
+  @media (min-width: 576px) and (max-width: 768px) {
+    .navigation .none {
+      display: none; } }
+  @media only screen and (max-width: 576px) {
+    .navigation .none {
+      display: none; } }
+  .navigation .line {
+    width: 20px;
+    height: 2px;
+    background-color: #fff;
+    margin: 5px; }
+  .navigation .active {
+    position: absolute;
+    top: 15px;
+    right: 15px; }
   .navigation .name {
     color: #fff;
     font-size: 13px;
@@ -7596,6 +7644,29 @@ a.text-dark:hover, a.text-dark:focus {
       padding: 10px 10px 0px 0px; }
       .navigation .nav-ul .nav-li .search:hover {
         opacity: 0.7; }
+
+.burger-button {
+  position: absolute;
+  z-index: 10;
+  top: -5px;
+  right: 0;
+  background-color: #3b2c3b;
+  height: 450px;
+  width: 100%;
+  display: block; }
+
+.column {
+  flex-direction: column; }
+
+.margin-20px {
+  margin: 20px; }
+
+.burger-list {
+  transition-duration: 0.4s;
+  font-size: 18px !important; }
+  .burger-list:hover {
+    border: none !important;
+    opacity: 0.7; }
 
 .header {
   background-image: url("../images/title-bg.png");

@@ -16,25 +16,63 @@
         height: 50px;
     }
     border-bottom: 1px solid #3b2c3b;
-    // .nav{
-    //     @include media-int(768, 991) {
-    //         position: absolute;
-    //         z-index: 10;
-    //         top: -15px;
-    //         right: 0;
-    //         background-color: #3b2c3b;
-    //         height: 400px;
-    //         width: 100%;
-    //     }
-    //     @include media-int(576, 768) {
-    //         display: fixed;
-    //         background-color: #3b2c3b;
-    //     }
-    //     @include media-max(576) {
-    //         display: fixed;
-    //         background-color: #3b2c3b;
-    //     }
-    // }
+    .burger-holder{
+        @include media-min(1200) {
+            display: none;
+        }
+        @include media-int(992, 1199) {
+            display: none;
+        }
+        @include media-int(768, 991) {
+            display: none;
+        }
+        @include media-int(576, 768) {
+            display: flex;
+            align-items: center;
+        }
+        @include media-max(576) {
+            display: flex;
+            align-items: center;
+        }
+        .search{
+            color: $white;
+            font-size: 20px;
+            transition-duration: 0.4s;
+            margin-left: 20px;
+            &:hover{
+                opacity: 0.7;
+            }
+        }
+    }
+    .none{
+        @include media-min(1200) {
+            display: flex;
+        }
+        @include media-int(992, 1199) {
+            display: flex;
+        }
+        @include media-int(768, 991) {
+            display: flex;
+        }
+        @include media-int(576, 768) {
+            display: none;
+        }
+        @include media-max(576) {
+            display: none;
+        }
+    }
+    .line{
+        width: 20px;
+        height: 2px;
+        background-color: $white;
+        margin: 5px;
+    }
+    .active{
+        position: absolute;
+        top: 15px;
+        right: 15px;
+    }
+    
     .name{
         color: $white;
         font-size: 13px;
@@ -64,5 +102,29 @@
                 }
             }
         }
+    }
+}
+.burger-button{
+    position: absolute;
+    z-index: 10;
+    top: -5px;
+    right: 0;
+    background-color: #3b2c3b;
+    height: 450px;
+    width: 100%;
+    display: block;
+}
+.column{
+    flex-direction: column;
+}
+.margin-20px{
+    margin: 20px;
+}
+.burger-list{
+    transition-duration: 0.4s;
+    font-size: 18px !important;
+    &:hover{
+        border: none !important;
+        opacity: 0.7;
     }
 }
