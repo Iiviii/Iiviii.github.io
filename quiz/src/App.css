@@ -7,12 +7,6 @@ body {
 *:focus {
     outline: none;
 }
-  
-/* .container {
-    width: 70%;
-    margin: 0 auto;
-} */
-  
 .header {
     justify-content: space-between;
     flex-wrap: wrap;
@@ -104,6 +98,16 @@ body {
 .red{
     background-color: #ffedc7 !important;
     color: #664d64 !important;
+}
+@media only screen and (min-width: 1200px) {
+    .header{
+        max-width: 1920px;
+        margin: 0 auto;
+    }
+    .card-grid {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
 }
 
 @media (min-width: 280px) and (max-width: 768px) {
