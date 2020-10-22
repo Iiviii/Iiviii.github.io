@@ -13,6 +13,15 @@
         overflow: hidden;
         transition-duration: 0.4s;
         margin-bottom: 30px;
+        @include media-int(281, 767) {
+            height: auto;
+            width: 100%;
+        }
+        @include media-max(280) {
+            width: 280px;
+            height: auto;
+            
+        }
         .hover-offer{
             display: none;
             text-align: start;

@@ -20,8 +20,14 @@
         @include media-int(768, 991) {
             height: 250px;
         }
-        @include media-max(767) {
+        @include media-int(281, 767) {
             height: 200px;
+            width: 100%;
+        }
+        @include media-max(280) {
+            width: 280px;
+            height: 210px;
+            
         }
         .icon{
             @include media-min(1200) {

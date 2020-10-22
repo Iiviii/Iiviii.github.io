@@ -899,7 +899,7 @@ a, a:hover, a:visited, a:active, a:focus {
         @media (min-width: 768px) and (max-width: 1199px) {
           .footer .footer-parts .footer-posts-area .footer-post-card .post-card-area {
             width: 240px; } }
-        @media only screen and (max-width: 767px) {
+        @media (min-width: 321px) and (max-width: 767px) {
           .footer .footer-parts .footer-posts-area .footer-post-card .post-card-area {
             width: 200px; } }
         .footer .footer-parts .footer-posts-area .footer-post-card .post-card-area .post-card-title {
@@ -948,6 +948,12 @@ a, a:hover, a:visited, a:active, a:focus {
           padding: 0px 15px 0px 16px; }
         .footer .footer-parts .footer-tags-area .letter .footer-input-holder .footer-input[type=text] {
           padding: 0px 16px; }
+          @media (min-width: 281px) and (max-width: 320px) {
+            .footer .footer-parts .footer-tags-area .letter .footer-input-holder .footer-input[type=text] {
+              width: 168px; } }
+          @media only screen and (max-width: 280px) {
+            .footer .footer-parts .footer-tags-area .letter .footer-input-holder .footer-input[type=text] {
+              width: 128px; } }
         .footer .footer-parts .footer-tags-area .letter .footer-input-holder .footer-btn {
           color: #18cfab;
           font-size: 16px;
@@ -1092,9 +1098,14 @@ a, a:hover, a:visited, a:active, a:focus {
   @media (min-width: 768px) and (max-width: 991px) {
     .option-section .option-card {
       height: 250px; } }
-  @media only screen and (max-width: 767px) {
+  @media (min-width: 281px) and (max-width: 767px) {
     .option-section .option-card {
-      height: 200px; } }
+      height: 200px;
+      width: 100%; } }
+  @media only screen and (max-width: 280px) {
+    .option-section .option-card {
+      width: 280px;
+      height: 210px; } }
   @media only screen and (min-width: 1200px) {
     .option-section .option-card .icon {
       padding: 95px 0px 50px 0px; } }
@@ -1174,6 +1185,12 @@ a, a:hover, a:visited, a:active, a:focus {
     z-index: 10;
     border-radius: 3px;
     margin: 7.5px 0px; }
+    @media (min-width: 281px) and (max-width: 320px) {
+      .company-section .each-area {
+        width: 280px; } }
+    @media only screen and (max-width: 280px) {
+      .company-section .each-area {
+        width: 200px; } }
     .company-section .each-area:last-child {
       margin-bottom: 100px; }
     .company-section .each-area .each {
@@ -1531,6 +1548,14 @@ a, a:hover, a:visited, a:active, a:focus {
       border-top: 10px solid #18cfab;
       background-color: #1c2a33;
       text-align: center; }
+      @media (min-width: 281px) and (max-width: 767px) {
+        .fact-section .col-lg-3 .fact-area, .fact-section .col-lg-3 .fact-area-second {
+          height: auto;
+          width: 100%; } }
+      @media only screen and (max-width: 280px) {
+        .fact-section .col-lg-3 .fact-area, .fact-section .col-lg-3 .fact-area-second {
+          width: 280px;
+          height: auto; } }
       .fact-section .col-lg-3 .fact-area .fact-num, .fact-section .col-lg-3 .fact-area-second .fact-num {
         font-family: 'MontserratRegular';
         font-size: 36px;
@@ -1560,6 +1585,14 @@ a, a:hover, a:visited, a:active, a:focus {
   overflow: hidden;
   transition-duration: 0.4s;
   margin-bottom: 30px; }
+  @media (min-width: 281px) and (max-width: 767px) {
+    .pricing-section .pricing-card {
+      height: auto;
+      width: 100%; } }
+  @media only screen and (max-width: 280px) {
+    .pricing-section .pricing-card {
+      width: 280px;
+      height: auto; } }
   .pricing-section .pricing-card .hover-offer {
     display: none;
     text-align: start;

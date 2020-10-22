@@ -114,7 +114,7 @@
                     @include media-int(768, 1199) {
                         width: 240px;
                     }
-                    @include media-max(767) {
+                    @include media-int(321, 767) {
                         width: 200px;
                     }
                     .post-card-title{
@@ -171,7 +171,7 @@
                     width: 100%;
                     background-color: #22353f;
                     margin-top: 25px;
-                    .footer-input{
+                    .footer-input{  
                         border: none;
                         background-color: #22353f;
                         padding: 0px 15px 0px 16px;
@@ -179,6 +179,12 @@
                     .footer-input[type=text]{
                         @extend .footer-p;
                         padding: 0px 16px;
+                        @include media-int(281, 320) {
+                            width: 168px;
+                        }
+                        @include media-max(280) {
+                            width: 128px;
+                        }
                     }
                     .footer-btn{
                         color: $green;

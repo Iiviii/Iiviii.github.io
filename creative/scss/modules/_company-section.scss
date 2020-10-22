@@ -50,6 +50,12 @@
         z-index: 10;
         border-radius: 3px;
         margin: 7.5px 0px;
+        @include media-int(281, 320) {
+            width: 280px;
+        }
+        @include media-max(280) {
+            width: 200px;
+        }
         &:last-child{
             margin-bottom: 100px;
         }

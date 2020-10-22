@@ -9,6 +9,15 @@
             border-top: 10px solid $green;
             background-color: $blue;
             text-align: center;
+            @include media-int(281, 767) {
+                height: auto;
+                width: 100%;
+            }
+            @include media-max(280) {
+                width: 280px;
+                height: auto;
+                
+            }
             .fact-num{
                 font-family: 'MontserratRegular';
                 font-size: $font-size-36px;
